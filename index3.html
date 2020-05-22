@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Автоперевозка "Попутка"</title>
+<style>
+body{
+  background:#c0c0c0; 
+}
+#wrapper{ 
+  width: 900px; 
+  margin: 0 auto;
+  background:#f2e8c9; 
+}
+#header{
+position:relative; 
+  height: 250px; 
+  background-color: #ffffff; 
+   margin-bottom: 5px; 
+  border-radius: 5px; 
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; 
+}
+img{ 
+float: left;
+  margin: -40px 0 0 0;} 
+h1{ 
+  margin:0 0 10px 40px; 
+  color:#464451; 
+}
+.nomer{ 
+  position:absolute; 
+  top:0px; 
+  left:780px; 
+  font-size: 5px; 
+  font-style:italic; 
+  background:#00ff00;
+}
+#sidebar{ 
+  background-color: #ffffff;
+  width: 170px; 
+  padding: 10px;
+  float: right; 
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+}
+.marcer{ 
+  float: left;
+  margin: 5px 5px 0 0; 
+}
+#content{ 
+  margin-bottom: 5px; 
+  width: 686px; 
+  padding: 10px; 
+  background: #ffffff; 
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+}
+.left{ 
+  float: left;
+  width: 250px; height: 200px;
+  margin: 30px 7px 7px 7px;
+}
+.right{ 
+  float: right;
+  margin: 7px 0px 7px 7px;
+  width: 250px; height: 200px;
+}
+
+
+#footer{ 
+  height:80px; 
+  background-color: #ffffff; 
+  margin-bottom: 10px; 
+  border-radius: 5px; 
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; 
+}
+.clear{ 
+  clear: both;
+}
+  .fon{ 
+  float:left; 
+  margin:20px 0 0 20px;
+}
+.fon2{ 
+  float:left;
+  margin:20px 0 0 60px;
+}
+.mail{ 
+    float:left;
+ margin:20px 0 0 60px;
+}
+#pricing-table {
+    margin: 100px auto;
+    text-align: center;
+    width: 928px; /* total computed width */
+    zoom: 1;
+}
+
+#pricing-table:before, #pricing-table:after {
+    content: "";
+    display: table
+}
+
+#pricing-table:after {
+    clear: both
+}
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  top:0px; 
+  left:780px; 
+  text-align: center;
+  font-size: 14px; 
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+   position:absolute; 
+}
+#pricing-table .plan {
+    font: 13px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;     
+    background: #fff;      
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 20px;
+    width: 180px;
+    float: left;
+    _display: inline; /* IE6 double margin fix */
+    position: relative;
+    margin: 0 5px;
+    box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);        
+}
+#pricing-table .plan:after {
+    z-index: -1; 
+    position: absolute; 
+    content: "";
+    bottom: 10px;
+    right: 4px;
+    width: 80%; 
+    top: 80%; 
+    box-shadow: 0 12px 5px rgba(0, 0, 0, .3);
+    transform: rotate(3deg);    
+}
+#pricing-table .popular-plan {
+    top: -20px;
+    padding: 40px 20px;
+}
+#pricing-table .header {
+        position: relative;
+        font-size: 20px;
+        font-weight: normal;
+        text-transform: uppercase;
+        padding: 40px;
+        margin: -20px -20px 20px -20px;
+        border-bottom: 8px solid;
+        background-color: #eee;
+        background-image: -moz-linear-gradient(#fff,#eee);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));    
+        background-image: -webkit-linear-gradient(#fff, #eee);
+        background-image: -o-linear-gradient(#fff, #eee);
+        background-image: -ms-linear-gradient(#fff, #eee);
+        background-image: linear-gradient(#fff, #eee);
+    }
+
+    #pricing-table .header:after {
+        position: absolute;
+        bottom: -8px; left: 0;
+        height: 3px; width: 100%;
+        content: '';
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAADCAYAAABfwxXFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGOEE3MTBFRDVCQ0NFMTExODcxMEJBRjhFNUY2ODdCRSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGMjQxOTc0MUNFNUUxMUUxQjczN0Q4QzY3MDc4MjkxOCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGMjQxOTc0MENFNUUxMUUxQjczN0Q4QzY3MDc4MjkxOCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0RDMxQTYxREVCQ0RFMTExQUI1NjlDMTg5OTUyMzNDNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGOEE3MTBFRDVCQ0NFMTExODcxMEJBRjhFNUY2ODdCRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqOCuVUAAAArSURBVHjaYvj//z8DFPMA8UkoDRZjQJJs/w8B7eiSKkD8Eyr5E8pnAAgwAIiWROlhTpC8AAAAAElFTkSuQmCC);
+    }
+    
+    #pricing-table .popular-plan .header {
+        margin-top: -40px;
+        padding-top: 60px;        
+    }
+
+    #pricing-table .plan1 .header{
+        border-bottom-color: black;
+    }
+
+    #pricing-table .plan2 .header{
+        border-bottom-color: #black;
+    }
+
+    #pricing-table .plan3 .header{
+        border-bottom-color: #black;
+    }
+
+    #pricing-table .plan4 .header{
+        border-bottom-color: #black;
+    } 
+    #pricing-table .price{
+    font-size: 45px;
+}
+
+#pricing-table .monthly{
+    font-size: 13px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #999;
+}
+
+/* --------------- */
+
+#pricing-table ul {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+#pricing-table li {
+    padding: 10px 0;
+}
+
+/* --------------- */
+    
+#pricing-table .signup {
+    position: relative;
+    padding: 10px 20px;
+    color: #fff;
+    font: bold 14px Arial, Helvetica;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;       
+    background-color: #72ce3f;
+    border-radius: 3px;     
+    text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+    opacity: .9;       
+}
+
+#pricing-table .signup:hover {
+    opacity: 1;       
+}
+
+#pricing-table .signup:active {
+    box-shadow: 0 2px 2px rgba(0,0,0,.3) inset;       
+}            
+
+#pricing-table .plan1 .signup{
+    background: #B3E03F;
+}
+
+#pricing-table .plan2 .signup{
+    background: #7BD553;
+}
+
+#pricing-table .plan3 .signup{
+    background: #3AD5A0;
+}
+
+#pricing-table .plan4 .signup{
+    background: #45D0DA;
+}
+
+</style>
+</head>
+<body>
+
+  <div id="wrapper"> 
+    <div id="header">
+      <h1>Грузоперевозки</h1>
+       <button class="button" onClick='location.href="file:///C:/Users/Danil/Desktop/RegisterForm.html#"'><span>Регестрация </span></button>
+        <img src="https://cdn1.savepice.ru/uploads/2020/5/22/61b76ff3019a4e43744b6bdbbe7fa2ed-full.png">
+    </div>
+    <div id="sidebar">
+      <h3>На нашем сайте</h3>
+  <a href="https://reckle.github.io/"><img class="marcer" src="http://trueimages.ru/img/99/91/dea39f15.png" width="10" height="10">Главная</a><br>
+        <a href="file:///C:/Users/Danil/Desktop/page2.html"><img class="marcer" src="http://trueimages.ru/img/99/91/dea39f15.png" width="10" height="10">Наша техника</a><br>
+          <hr width="50" color="#037FFC" size="5">
+    </div>
+    <div id="content">
+        <h3 align="center">Наши цены</h3>
+ <div id="pricing-table">
+    <div class="plan plan1">
+        <div class="header">«Газель-Бизнес»</div>
+        <div class="price">$1</div>  
+        <div class="monthly">на км</div>      
+    </div>
+    <div class="plan plan3">
+        <div class="header">Промтоварный автофургон</div>
+        <div class="price">$2</div>
+        <div class="monthly">на км</div>
+        
+    </div>
+    <div class="plan plan3">
+        <div class="header">Еврофура (22-23т)</div>
+        <div class="price">$3</div>
+        <div class="monthly">на км</div>
+        
+    </div>     
+</div>
+    </div>
+  <div class="clear"></div>
+    <div id="footer">
+      <p class="fon"><strong>Телефон №1:<br> +380996395835</strong> </p>
+      <p class="fon2"><strong>Телефон №2:<br> +380506565785</strong></p>
+      <p class="mail"><strong>E-mail<br>ctoto@gmail.com</strong></p>
+    </div>
+  </div>
+</body>
+</html>
