@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Автоперевозка "Попутка"</title>
+<style>
+body{
+  background:#c0c0c0; 
+}
+#wrapper{ 
+  width: 900px; 
+  margin: 0 auto;
+  background:#f2e8c9; 
+}
+#header{
+position:relative; 
+  height: 250px; 
+  background-color: #ffffff; 
+   margin-bottom: 5px; 
+  border-radius: 5px; 
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; 
+}
+img{ 
+float: left;
+  margin: -40px 0 0 0;} 
+h1{ 
+  margin:0 0 10px 40px; 
+  color:#464451; 
+}
+.nomer{ 
+  position:absolute; 
+  top:0px; 
+  left:780px; 
+  font-size: 5px; 
+  font-style:italic; 
+  background:#00ff00;
+}
+#sidebar{ 
+  background-color: #ffffff;
+  width: 180px; 
+  padding: 10px;
+  float: right; 
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+}
+.marcer{ 
+  float: left;
+  margin: 5px 5px 0 0; 
+}
+#content{ 
+  margin-bottom: 5px; 
+  width: 676px; 
+  padding: 10px; 
+  background: #ffffff; 
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+}
+.left{ 
+  float: left;
+  margin: 30px 7px 7px 7px;
+}
+.right{ 
+  float: right;
+  margin: 7px 0 7px 7px;
+}
+
+
+#footer{ 
+  height:80px; 
+  background-color: #ffffff; 
+  margin-bottom: 10px; 
+  border-radius: 5px; 
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; 
+}
+.clear{ 
+  clear: both;
+}
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  top:0px; 
+  left:780px; 
+  text-align: center;
+  font-size: 14px; 
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+   position:absolute; 
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+  .fon{ 
+  float:left; 
+  margin:20px 0 0 20px;
+}
+.fon2{ 
+  float:left;
+  margin:20px 0 0 60px;
+}
+.mail{ 
+    float:left;
+ margin:20px 0 0 60px;
+}
+section {
+        background: green;
+        border-radius: 1em;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) }
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+</style>
+</head>
+<body>
+<script src = "file:///D:\projects\Html\ajax.jx" type="text/javascript">
+</script>
+  <div id="wrapper"> 
+    <div id="header">
+      <h1>Грузоперевозки</h1>
+        <button class="button" onClick='location.href="file:///C:/Users/Danil/Desktop/RegisterForm.html#"'><span>Регестрация </span></button>
+        <img src="file:///D:\trash\Main.png">
+    </div>
+    <div id="sidebar">
+      <h3>На нашем сайте</h3>
+        <div class="tooltip"><a href="file:///C:/Users/Danil/Desktop/page2.html"><img class="marcer" src="http://trueimages.ru/img/99/91/dea39f15.png" width="10" height="10">Наша техника</a><span class="tooltiptext">Просмотреть технику</span>
+</div><br>
+        <div class="tooltip"><a href="file:///C:/Users/Danil/Desktop/page3.html"><img class="marcer" src="http://trueimages.ru/img/99/91/dea39f15.png" width="10" height="10">Прайс</a><span class="tooltiptext">Просмотреть цены</span>
+</div><br>
+    <div class="tooltip"><a href="file:///C:/Users/Danil/Desktop/krestiki_noliki.html"><img class="marcer" src="http://trueimages.ru/img/99/91/dea39f15.png" width="10" height="10">Крестики-Нолики</a><span class="tooltiptext">Игра "Крестики-Нолики</span>
+</div><br>
+          <hr width="50" color="#037FFC" size="5">
+    </div>
+    <div id="content">
+      <img class="left" src="http://trueimages.ru/img/81/90/b1718f15.png">
+        <h3>Наша работа</h3>
+<p> Бесплатный информационно транспортный сайт ПОПУТКА предлагает постоянно обновляющиеся предложения о наличии груза и транспорта в Украине и Европе. Транспортный сайт  рассчитан на широкий круг пользователей по обмену информацией в сфере автоперевозок, грузоперевозок, автомобильных перевозок, транспортных услуг и доставки груза.  </p>
+<p> К Вашим услугам — наш 20-летний опыт организации внутренних и международных грузоперевозок. Мы хорошо знаем этот рынок, знаем его плюсы, знаем и «подводные камни» автоперевозок. Обратившись к нам, Заказчик всегда получает необходимое количество предложений по перевозке груза от разных перевозчиков, и каждый раз выбирает только наиболее выгодное.</p>
+      <img class="right" src="http://trueimages.ru/img/0d/64/07a18f15.png">
+<p> Все перевозчики "Попутки" проходят обязательную процедуру регистрации, предоставляя нам государственные документы на свой род деятельности.
+Вы можете найти перевозчика на нашем сайте прямо сейчас! Для предприятий и предпринимателей, которые занимаются перевозками грузов, мы предоставляем исключительно качественную информацию о прямых Заказчиках грузовых перевозок и заказы на грузоперевозки.</p>
+<p> Уверен, у Вас получится найти то, что вам нужно именно на нашем сайте.</p>
+    </div>
+  <div class="clear"></div>
+    <div id="footer">
+      <p class="fon"><strong>Телефон №1:<br> +380996395835</strong> </p>
+      <p class="fon2"><strong>Телефон №2:<br> +380506565785</strong></p>
+      <p class="mail"><strong>E-mail<br>ctoto@gmail.com</strong></p>
+    </div>
+  </div>
+</body>
+</html>
